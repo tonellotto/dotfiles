@@ -208,10 +208,12 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 rsync -avh --no-perms iTunes/* ~/Library/iTunes/Scripts;
 
 # Set keyboard shortcuts
-defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Ahead 10"="@\Uf703";}'
-defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Ahead 60"="@$\Uf703";}'
-defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Back 10"="@\Uf702";}'
-defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Back 60"="@$\Uf702";}'
+defaults write com.apple.iTunes NSUserKeyEquivalents '{
+	"Skip Ahead 10"="@\Uf703";
+	"Skip Ahead 60"="@$\Uf703";
+	"Skip Back 10"="@\Uf702";
+	"Skip Back 60"="@$\Uf702";
+}'
 
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
