@@ -200,6 +200,19 @@ sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+###############################################################################
+# iTunes                                                                      #
+###############################################################################
+
+# Copy iTunes scripts
+rsync -avh --no-perms iTunes/* ~/Library/iTunes/Scripts;
+
+# Set keyboard shortcuts
+defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Ahead 10"="@\Uf703";}'
+defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Ahead 60"="@$\Uf703";}'
+defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Back 10"="@\Uf702";}'
+defaults write com.apple.iTunes NSUserKeyEquivalents '{"Skip Back 60"="@$\Uf702";}'
+
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
@@ -681,7 +694,7 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
 	"Opera" "Photos" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
-	"Transmission" "Tweetbot" "Twitter" "iCal"; do
+	"Transmission" "Tweetbot" "Twitter" "iCal" "iTunes"; do
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
