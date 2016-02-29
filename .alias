@@ -142,3 +142,6 @@ alias reload="exec $SHELL -l"
 
 # Use skim to open files
 alias skim='open /Applications/Skim.app'
+
+# Use Sublime Text to open files
+alias subl='open -a /Applications/Sublime\ Text.app'
