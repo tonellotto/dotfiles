@@ -174,3 +174,12 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+
+	name = Nicola Tonellotto
+	email = nicola.tonellotto@gmail.com
+
+[credential]
+
+	helper = osxkeychain
