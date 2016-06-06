@@ -69,6 +69,8 @@ brew install autocompletion
 brew install zsh zsh-completions
 brew install ngrep
 
+brew install homebrew/python/matplotlib --with-cairo --with-tex
+
 # Cask stuff
 # Install Cask
 brew install caskroom/cask/brew-cask
