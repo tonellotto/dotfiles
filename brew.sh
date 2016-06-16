@@ -79,12 +79,12 @@ brew tap caskroom/cask
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Install Casks
-brew cask install caffeine
-brew cask install virtualbox
-brew cask install vagrant
+# brew cask install caffeine
+# brew cask install virtualbox
+# brew cask install vagrant
 
-brew cask install google-chrome
-brew cask install iterm2
+# brew cask install google-chrome
+# brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
