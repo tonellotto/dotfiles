@@ -52,37 +52,38 @@ brew install webkit2png
 brew tap homebrew/science
 
 brew install gcc
-brew install boost --cc=gcc-5 --build-from-source
-brew install ipython
-brew install pip
+brew install boost --cc=gcc-6 --build-from-source
+#brew install ipython
+#brew install pip
 brew install python
 brew install pyqt
+pip install ipython
 brew install nano
 brew install r
 brew install coreutils
-brew install mvn
+#brew install mvn
 brew install maven
 brew install ant
 brew install svn
 brew install datamash
-brew install autocompletion
+#brew install autocompletion
 brew install zsh zsh-completions
 brew install ngrep
 
 # Cask stuff
 # Install Cask
-brew install caskroom/cask/brew-cask
+#brew install caskroom/cask/brew-cask
 
-brew tap caskroom/cask
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+#brew tap caskroom/cask
+#brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Install Casks
-brew cask install caffeine
-brew cask install virtualbox
-brew cask install vagrant
+#brew cask install caffeine
+#brew cask install virtualbox
+#brew cask install vagrant
 
-brew cask install google-chrome
-brew cask install iterm2
+#brew cask install google-chrome
+#brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
