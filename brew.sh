@@ -70,6 +70,8 @@ brew install datamash
 brew install zsh zsh-completions
 brew install ngrep
 
+brew install homebrew/python/matplotlib --with-cairo --with-tex
+
 # Cask stuff
 # Install Cask
 #brew install caskroom/cask/brew-cask
@@ -78,12 +80,12 @@ brew install ngrep
 #brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Install Casks
-#brew cask install caffeine
-#brew cask install virtualbox
-#brew cask install vagrant
+# brew cask install caffeine
+# brew cask install virtualbox
+# brew cask install vagrant
 
-#brew cask install google-chrome
-#brew cask install iterm2
+# brew cask install google-chrome
+# brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
