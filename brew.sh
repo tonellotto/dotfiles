@@ -51,7 +51,7 @@ brew install webkit2png
 # Install programming tools
 brew tap homebrew/science
 
-brew install gcc
+brew install gcc --without-multilib
 brew install boost --cc=gcc-5 --build-from-source
 brew install ipython
 brew install pip
